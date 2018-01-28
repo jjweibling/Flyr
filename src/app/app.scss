@@ -1,5 +1,14 @@
 // http://ionicframework.com/docs/theming/
 
+.fixed-content{
+  background-blend-mode: lighten;
+background-color: #CA95B2;}
+.item-avatar   {
+width:100% ;
+height : 100% ;
+max-width: 900px ;  //any size
+max-height: 100px ; //any size
+}
 
 // App Global Sass
 // --------------------------------------------------

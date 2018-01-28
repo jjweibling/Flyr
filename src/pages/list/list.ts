@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { ProfilePage } from '../../pages/profile/profile';
+import {SearchPage } from '../../pages/search/search';
+import {LoginPage } from '../../pages/login/login';
+import {ChatPage } from '../../pages/chat/chat';
 @Component({
   selector: 'page-list',
   templateUrl: 'list.html'
@@ -21,8 +24,8 @@ export class ListPage {
     this.items = [];
     for (let i = 1; i < 11; i++) {
       this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
+        title: 'Match ' + i,
+        //note: 'This is item #' + i,
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
       });
     }
@@ -30,7 +33,7 @@ export class ListPage {
 
   itemTapped(event, item) {
     // That's right, we're pushing to ourselves!
-    this.navCtrl.push(ListPage, {
+    this.navCtrl.push(ChatPage, {
       item: item
     });
   }
